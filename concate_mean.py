@@ -19,6 +19,7 @@ means.to_csv('/Users/carrielin/Desktop/result/8_result_acc_mean.csv')
 
 
 #get mean of group data
+#concat data files (with same names)
 df_all=pd.concat([parsed,parsed2,parsed3],keys=['','',''])
 df_all=df_all.swaplevel('condition','run_sequence').sortlevel(0) #ignore the warning after this line
 
