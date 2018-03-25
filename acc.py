@@ -6,7 +6,7 @@ import numpy as np
 
 df8=pd.read_csv('/Users/carrielin/Desktop/result/8_result_2.csv')
 
-df8['stimuli']=df8['stimuli'].str[:3]
+df8['stimuli']=df8['stimuli'].str[:3] #extract first 3 characters/letter [index]
 
 df8['stimuli']=df8['stimuli'].replace('ba2','ba,tone2')
 df8['stimuli']=df8['stimuli'].replace('ba4','ba,tone4')
